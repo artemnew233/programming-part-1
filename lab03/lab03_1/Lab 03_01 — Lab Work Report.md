@@ -1,4 +1,4 @@
-**# Lab 03_01 — Lab Work Report (Variant 9)
+# Lab 03_01 — Lab Work Report (Variant 9)
 
 ---
 
