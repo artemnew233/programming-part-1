@@ -135,7 +135,7 @@ E(-2.000000) = -inf
 $D = \mathbb{R} \setminus \{5, -2\}$
 
 - **Simplification (for $x \neq 5$):** \
-    $\frac{x^2 - 25}{x - 5} = x + 5$ \
+    $\frac{x^2 - 25}{x - 5} = x + 5$ 
 
 **so, for $x \neq 5, -2$:**
 
