@@ -155,3 +155,4 @@ $E(x) = x + 5 + \frac{3(4x + 1)}{x + 2}$
   so the value diverges (no finite limit).
 
 **Conclusion:** Running the program shows correct numeric outputs for ordinary inputs, rapid growth and sensitivity of the result near `x = 5`, and undefined/infinite outcomes when `x = 5` or `x = -2`. The program does not report intermediate values or input-read errors during these runs.
+   
