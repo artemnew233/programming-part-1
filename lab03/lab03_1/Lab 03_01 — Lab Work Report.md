@@ -2,7 +2,7 @@
 
 ---
 
-**Course:** Programming, Part 2  
+**Course:** Programming, Part 1  
 **Institution:** NTU KhPI, Kharkiv, Ukraine  
 **Student:** Artem Smeliantsev  
 **Date:** 19.10.20025
@@ -129,10 +129,6 @@ E(-2.000000) = -inf
 
 - I observed that the program prints only the final value `E(x)` and does not display intermediate variables (`a`, `b`, `c`, `d`, `e`) during normal runs.
 
-- I entered a non-numeric string to test input handling: `scanf` accepted nothing meaningful and the program did not detect malformed input (no error message appeared).
-
-- I also noticed `math.h` is included but no math functions from it are used in this code as executed. 
-
 ### DOD:
 
 - **Domain:** \
@@ -155,4 +151,3 @@ $E(x) = x + 5 + \frac{3(4x + 1)}{x + 2}$
   so the value diverges (no finite limit).
 
 **Conclusion:** Running the program shows correct numeric outputs for ordinary inputs, rapid growth and sensitivity of the result near `x = 5`, and undefined/infinite outcomes when `x = 5` or `x = -2`. The program does not report intermediate values or input-read errors during these runs.
-   
