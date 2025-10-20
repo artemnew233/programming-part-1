@@ -20,8 +20,12 @@ Implement a C program that evaluates the arithmetic expression for a single inpu
 **Variant:** 9
 
 **Formula**  
-**9.** \( E(x) = \dfrac{x^2 - 25}{x - 5} + \dfrac{3(4x + 1)}{x + 2} \)
-![alt text](image.png)
+**9.** 
+$
+E(x) = \frac{x^2 - 25}{x - 5} + \frac{3(4x + 1)}{x + 2}
+$
+
+
 
 ---
 
@@ -127,6 +131,27 @@ E(-2.000000) = -inf
 
 - I entered a non-numeric string to test input handling: `scanf` accepted nothing meaningful and the program did not detect malformed input (no error message appeared).
 
-- I also noticed `math.h` is included but no math functions from it are used in this code as executed.
+- I also noticed `math.h` is included but no math functions from it are used in this code as executed. 
+
+### DOD:
+
+- **Domain:** \
+$D = \mathbb{R} \setminus \{5, -2\}$
+
+- **Simplification (for $x \neq 5$):** \
+    $\frac{x^2 - 25}{x - 5} = x + 5$ \
+
+**so, for $x \neq 5, -2$:**
+
+$E(x) = x + 5 + \frac{3(4x + 1)}{x + 2}$
+
+**Remarks:**
+
+- x = 5 — removable discontinuity:  
+  $\displaystyle \lim_{x \to 5} E(x) = 10 + 9 = 19$,  
+  but the original expression is undefined at x = 5.
+- x = -2  — vertical (essential) singularity:  
+  the denominator of the second term equals 0 while the numerator equals -21,  
+  so the value diverges (no finite limit).
 
 **Conclusion:** Running the program shows correct numeric outputs for ordinary inputs, rapid growth and sensitivity of the result near `x = 5`, and undefined/infinite outcomes when `x = 5` or `x = -2`. The program does not report intermediate values or input-read errors during these runs.
