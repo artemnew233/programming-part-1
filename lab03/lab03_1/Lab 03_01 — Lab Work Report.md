@@ -40,7 +40,7 @@ $
 
 ```bash
 # compile
-gcc -g -O0 -Wall -lm task3_1.c -o task3_1
+gcc -g -O0 -Wall task3_1.c -o task3_1 -lm
 
 # run
 ./task3_1
