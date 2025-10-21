@@ -1,8 +1,8 @@
-# Lab 03_01 — Lab Work Report (Variant 9)
+# Lab 03_02 — Lab Work Report (Variant 9)
 
 ---
 
-**Course:** Programming, Part 2  
+**Course:** Programming, Part 1  
 **Institution:** NTU KhPI, Kharkiv, Ukraine  
 **Student:** Artem Smeliantsev  
 **Date:** 20.10.2025
