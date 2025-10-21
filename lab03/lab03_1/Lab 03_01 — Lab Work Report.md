@@ -103,11 +103,43 @@ E(-2.000000) = -inf
 ![alt text](image-11.png) => debug
 
 ---
-
+# Debug session
 ## Debugger screenshot
 
 ![alt text](image-12.png)
 
+## GDB
+```
+$ gdb ./task3_1
+(gdb) break main
+(gdb) run
+x = 0
+(gdb) next
+(gdb) print a
+$1 = -25.000000
+(gdb) next
+(gdb) print b
+$2 = -5.000000
+(gdb) next
+(gdb) print E
+$3 = 6.500000000000000
+(gdb) run
+x = 2
+(gdb) next
+(gdb) print a
+$4 = -21.000000
+(gdb) next
+(gdb) print E
+$5 = 13.75000000000000
+(gdb) run
+x = 5
+(gdb) next
+(gdb) print b
+$6 = 0.000000         # denominator b = x-5 == 0
+(gdb) next
+(gdb) print E
+$7 = nan             # or +inf/-inf depending on platform
+```
 ---
 
 ### Observations and Conclusion
