@@ -7,15 +7,18 @@ int main(void)
     printf("Enter x: ");
     if (scanf("%lf", &x) != 1)
     {
-        printf("Error: You have to write a number a number.\n");
+        printf("Error: You have to write a number.\n");
         return 0;
     }
-    double a = log(x);
-    double b = sin(x);
-    double c = cos(x);
-    double d = exp(x);
-    double e = x + 1.0;
-    double E = a / b + (c * d) / e;
+    double a = exp(0.5 * x);
+    double b = log(x + 7.0);
+    double c = sin(x);
+    double d = tan(x);
+    double e = cos(x);
+    double denom = e - 1.0;
+
+    double E = a / b + (c * d);
+
     printf("\nE(%.6f) = %.6f\n", x, E);
     return 0;
 }
