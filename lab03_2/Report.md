@@ -88,6 +88,37 @@ E(-1.000000) = -nan
 ```
 ![alt text](image-3.png) => debugger
 
+## GDB debug session
+
+```$ gdb ./task3_2
+(gdb) break main
+(gdb) run
+Enter x: 1
+(gdb) next
+(gdb) print a
+$1 = 0.000000000000   
+(gdb) next
+(gdb) print b
+$2 = 0.841470984808   
+(gdb) next
+(gdb) print E
+$3 = 0.734346969958   
+(gdb) run
+Enter x: 3.141592653589793
+(gdb) next
+(gdb) print b
+$4 = 0.000000000000
+(gdb) next
+(gdb) print E
+$5 = 9.347428880281278e+15
+(gdb) run
+Enter x: 0
+(gdb) next
+(gdb) print a
+$6 = -inf
+(gdb) print E
+$7 = nan
+```
 
 ### Observations and Conclusion
 
