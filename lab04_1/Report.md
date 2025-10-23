@@ -1,9 +1,7 @@
-# Short Report.md — Variant 12
-
-**Course:** Programming, Part 2  
+**Course:** Programming, Part 1
 **Institution:** NTU KhPI, Kharkiv, Ukraine  
-**Student:** _STUDENT_NAME_  
-**Date:** _DATE_OF_WORK_  
+**Student:** Artem Smeliantsev
+**Date:** 20.10.2025
 
 ---
 
