@@ -8,20 +8,20 @@ int main(void)
     printf("Enter base price: ");
     if (scanf("%lf", &base) != 1)
     {
-        puts("Invalid input: expected a number for base price.");
-        return 1;
+        puts("You wrote not a number");
+        return 0;
     }
     if (base < 0.0)
     {
-        puts("Error: base price must be non-negative.");
-        return 2;
+        puts("The number cant be negative");
+        return 0;
     }
 
     printf("Enter tax code (1 -> 5%%, 2 -> 10%%, 3 -> 20%%): ");
     if (scanf("%d", &code) != 1)
     {
         puts("Invalid input: expected an integer tax code.");
-        return 1;
+        return 0;
     }
 
     double rate;
@@ -38,7 +38,7 @@ int main(void)
         break;
     default:
         printf("Error: invalid tax code (%d). Valid codes: 1, 2, 3.\n", code);
-        return 3;
+        return 0;
     }
 
     double total = base * (1.0 + rate);
