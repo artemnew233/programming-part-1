@@ -1,9 +1,6 @@
-# Lab 05_03 — Base Conversion (Variant 12) — Minimal headers
-
----
-**Course:** Programming, Part 2  
+**Course:** Programming, Part 1 
 **Institution:** NTU KhPI, Kharkiv, Ukraine  
-**Student:** _STUDENT_NAME_  
+**Student:** Smeliantsev Artem  
 **Date:** 24 October 2025  
 
 ---
