@@ -16,6 +16,7 @@ Variant 12 is an even variant, so the program uses a **while** loop.
 
 ## Function domain
 
+
 We require the expression under the square root to be positive:
 $
 12 - x > 0 \Rightarrow x < 12.

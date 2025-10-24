@@ -25,7 +25,6 @@ int main(void)
     {
         step = (b - a) / (double)(n - 1);
     }
-
     int i = 0;
     while (i < n)
     {
