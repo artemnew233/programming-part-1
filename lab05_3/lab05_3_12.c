@@ -36,7 +36,7 @@ int main(void)
             fprintf(stderr, "Invalid digit '%c' encountered — allowed digits: 0..4\n", ch);
             while (ch != EOF && ch != '\n')
                 ch = getchar();
-            return 2;
+            return 0;
         }
     }
 
