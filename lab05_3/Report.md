@@ -81,3 +81,4 @@ Conclusion
 - The minimal-header implementation is correct and portable for typical lab inputs. It keeps the code simple and meets the assignment requirements.
 - For extremely large numbers or production-grade conversion, consider arbitrary-precision libraries (e.g., GMP) or use a string-based algorithm with big-integer arithmetic.
 ```
+

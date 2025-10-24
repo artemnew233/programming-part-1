@@ -54,7 +54,7 @@ int main(void)
     if (scanf("%llu", &n) != 1)
     {
         fprintf(stderr, "Failed to read decimal number\n");
-        return 4;
+        return 0;
     }
     unsigned long long p = 1ULL;
     if (n == 0ULL)
