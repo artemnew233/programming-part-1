@@ -1,4 +1,4 @@
-**Course:** Programming, Part 1 
+**Course:** Programming, Part 1 \
 **Institution:** NTU KhPI, Kharkiv, Ukraine  
 **Student:** Smeliantsev Artem  
 **Date:** 24 October 2025  
