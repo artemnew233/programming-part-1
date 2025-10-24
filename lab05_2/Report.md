@@ -1,16 +1,10 @@
-# Lab 05_02 — Function Tabulation (Variant 12)
-
----
-**Course:** Programming, Part 2  
+**Course:** Programming, Part 1 
 **Institution:** NTU KhPI, Kharkiv, Ukraine  
-**Student:** _STUDENT_NAME_  
+**Student:** Smeliantsev Artem  
 **Date:** 24 October 2025  
-
 ---
 
-## Variant number
-
-**12**
+## Variant number: **12**
 
 ## Formula (from Table 1)
 
@@ -71,3 +65,20 @@ $4 = 0.288675 (example value)
 $5 = 1
 (gdb) continue
 ```
+
+## Observations and Conclusion
+
+### Observations:
+- The tabulation routine correctly implements r = sin(π/2 − x/4) / sqrt(12 − x) on the range [0,4]; for x in [0,4] the denominator argument (12−x) is always ≥ 8, so no domain error occurs in normal use.
+- The program follows the variant rule (even variant → use a while loop) and handles the n==1 special case (single point) correctly.
+- Replacing the non-portable macro M_PI_2 with PI = acos(-1.0) makes the code portable across compilers and platforms.
+- The code prints values using `printf("%10.5f %12.5f\n", x, y)` which gives readable, fixed-width columns suitable for lab submission.
+- The implementation defends against invalid input (n ≤ 0) and against unexpected floating-point issues by producing `NaN` for invalid points.
+- For very large n the spacing is computed correctly (h = (b−a)/(n−1)); numerical round-off in x accumulates at most O(n)·ε and is insignificant for practical n used in lab tasks.
+- Tested compilation and a sample run (n=7) — compilation succeeded and output matches analytic expectations.
+
+### Conclusion
+- The implementation is correct, portable and meets the lab requirements: it tabulates the function on [0,4], uses a while loop, validates domain and input, and formats output appropriately.
+- The portability fix (define PI with acos(-1.0)) is recommended for all small numerical C programs to avoid dependence on non-standard macros.
+- For further robustness: add automated tests for edge cases (n=1, n large, x at endpoints), a small usage/help message, and optionally use `long double` or higher-precision arithmetic if more accurate intermediate results become necessary.
+
