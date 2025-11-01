@@ -119,10 +119,3 @@ Include an actual transcript / screenshot from your environment when submitting.
 
 **Conclusion:** Implementation for Variant 12 is complete and tested. The provided `makefile` builds `build/app` and `make run` executes the program — this workflow is convenient for grading and demonstration.
 
----
-
-If you want, I can:
-
-* insert your name in the header and re-create the file, or
-* produce a downloadable `.md` or `.txt` with this content.
-
