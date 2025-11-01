@@ -1,24 +1,27 @@
 CC := gcc
-CFLAGS := -Wall -Wextra -O2 -std=c11 -Iinclude -MMD -MP
+CFLAGS := -std=c11 -O2 -Wall -Wextra -Iinclude
 LDFLAGS := -lm
 
 BUILD := build
-SRC_DIR := src
+SRCDIRS := src .
 
-SRCS := $(wildcard $(SRC_DIR)/*.c) main.c
-OBJS := $(patsubst %.c,$(BUILD)/%.o,$(notdir $(SRCS)))
-DEPS := $(OBJS:.o=.d)
+SRCS := src/lab06_1.c main.c
 
-vpath %.c . $(SRC_DIR)
 
-.PHONY: all exe clean
+BSRCS := $(notdir $(SRCS))
 
-all: exe
+OBJS := $(patsubst %.c,$(BUILD)/%.o,$(BSRCS))
 
-exe: $(BUILD)/app
+vpath %.c $(SRCDIRS)
+
+.PHONY: all clean run
+
+all: $(BUILD)/app
+
 
 $(BUILD)/app: $(OBJS) | $(BUILD)
 	$(CC) $(OBJS) -o $@ $(LDFLAGS)
+
 
 $(BUILD)/%.o: %.c | $(BUILD)
 	$(CC) $(CFLAGS) -c $< -o $@
@@ -26,7 +29,9 @@ $(BUILD)/%.o: %.c | $(BUILD)
 $(BUILD):
 	@mkdir -p $(BUILD)
 
+run: all
+	@echo "Running ./$(BUILD)/app"
+	@./$(BUILD)/app
+
 clean:
 	@rm -rf $(BUILD)
-
--include $(DEPS)
