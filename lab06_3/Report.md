@@ -1,8 +1,7 @@
-**Course:** Programming, Part 2
-**Institution:** NTU KhPI, Kharkiv, Ukraine
-**Student:** Artem Smeliantsev
-**Date:** 2025-10-19
-
+**Course:** Programming, Part 1 \
+**Institution:** NTU KhPI, Kharkiv, Ukraine  
+**Student:** Smeliantsev Artem  
+**Date:**  1 November 2025  
 ---
 
 ## Task Description
@@ -105,11 +104,6 @@ Notes:
 * Calls with `from > to` produce no output.
 * Calls with `f == NULL` produce no output.
 
----
-
-## Tests
-
-No automated unit tests were provided for this lab. Functionality was verified manually using the demo `main.c` and the sample callbacks above. All sample invocations produced the expected formatted lines.
 
 ---
 
