@@ -2,10 +2,10 @@
 
 ---
 
-**Course:** Programming, Part 2
-**Institution:** NTU KhPI, Kharkiv, Ukraine
-**Student:** *STUDENT_NAME*
-**Date:** 2025-11-01
+**Course:** Programming, Part 1 \
+**Institution:** NTU KhPI, Kharkiv, Ukraine  
+**Student:** Smeliantsev Artem  
+**Date:**  1 November 2025  
 
 ---
 
@@ -58,7 +58,7 @@ make
 Example `make run` target (optional — can be appended to Makefile):
 
 ```makefile
-run: exe
+run: exe`
 	./$(BUILD)/app
 ```
 
