@@ -1,6 +1,5 @@
 #include "unity.h"
 
-// Declare test functions
 void test_expr12_simple_case(void);
 void test_expr12_another_case(void);
 
