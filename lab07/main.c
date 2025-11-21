@@ -1,21 +1,32 @@
 #include <stdio.h>
+#include <math.h>
 #include "lib.h"
 
 int main(void)
 {
-    double r;
-
-    r = expr1(0.0, 0.0, 4.0, 0.0, 0.0);
-    printf("expr1(0,0,4,0,0) = %.10g\n", r);
-
-    r = expr6(0.0, 2.0, 1.0, 3.141592653589793 / 4.0, 3.0);
-    printf("expr6(0,2,1,pi/4,3) = %.10g\n", r);
-
-    r = expr12(2.0, 0.5, 3.0, 1.0);
-    printf("expr12(2,0.5,3,1) = %.10g\n", r);
-
-    r = expr16(1.0, 2.0, 0.0, 1.0);
-    printf("expr16(1,2,0,1) = %.10g\n", r);
+    // Example usage of the expression function: (x - sin(y)) * z^2 + exp(w)
+    
+    // Case 1: x=2, y=0, z=3, w=0 -> Result: 19.0
+    double x1 = 2.0;
+    double y1 = 0.0;
+    double z1 = 3.0;
+    double w1 = 0.0;
+    
+    double result1 = expr12(x1, y1, z1, w1);
+    
+    printf("Case 1: (x=%.2f, y=%.2f, z=%.2f, w=%.2f)\n", x1, y1, z1, w1);
+    printf("Result: %.10f\n", result1);
+    
+    // Case 2: x=1, y=M_PI/2, z=1, w=1 -> Result: M_E (approx 2.718)
+    double x2 = 1.0;
+    double y2 = M_PI / 2.0;
+    double z2 = 1.0;
+    double w2 = 1.0;
+    
+    double result2 = expr12(x2, y2, z2, w2);
+    
+    printf("\nCase 2: (x=%.2f, y=%.2f, z=%.2f, w=%.2f)\n", x2, y2, z2, w2);
+    printf("Result: %.10f\n", result2);
 
     return 0;
 }

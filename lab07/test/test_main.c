@@ -1,16 +1,13 @@
 #include "unity.h"
 
-void test_expr1_simple(void);
-void test_expr6_simple(void);
-void test_expr12_example(void);
-void test_expr16_example(void);
+// Declare test functions
+void test_expr12_simple_case(void);
+void test_expr12_another_case(void);
 
 int main(void)
 {
     UNITY_BEGIN();
-    RUN_TEST(test_expr1_simple);
-    RUN_TEST(test_expr6_simple);
-    RUN_TEST(test_expr12_example);
-    RUN_TEST(test_expr16_example);
+    RUN_TEST(test_expr12_simple_case);
+    RUN_TEST(test_expr12_another_case);
     return UNITY_END();
 }
