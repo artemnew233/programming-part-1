@@ -108,7 +108,6 @@ int main()
         {6, 10, 3, 0},
         {-1, 12, 4, 11}};
 
-    printf("--- Original Matrix ---\n");
     print_matrix(N, matrix);
     printf("\n");
 
