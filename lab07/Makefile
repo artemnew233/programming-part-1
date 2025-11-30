@@ -1,7 +1,7 @@
 CC = gcc
-CFLAGS = -Wall -Iinclude -IUnity/src -fprofile-arcs -ftest-coverage
+CFLAGS = -Wall -Iinclude -I../Unity/src -fprofile-arcs -ftest-coverage
 LDFLAGS = -fprofile-arcs -ftest-coverage
-UNITY_SRC = Unity/src/unity.c
+UNITY_SRC = ../Unity/src/unity.c
 
 SRC_DIR = src
 TEST_DIR = test
