@@ -32,22 +32,22 @@ int main(void)
         {
             if (d3 == d4)
             {
-                printf("YES, %d has 4 same digits %d", n, d1); // --> yes
+                printf("YES, %d has 4 same digits %d", n, d1);
             }
             else
             {
-                printf("YES, %d has 3 same digits %d", n, d1); // --> yes
+                printf("YES, %d has 3 same digits %d", n, d1);
             }
             return 0;
         }
         if (d2 == d4)
         {
-            printf("YES, %d has 3 same digits %d", n, d1); // --> yes
+            printf("YES, %d has 3 same digits %d", n, d1);
             return 0;
         }
         else
         {
-            printf("NO, there are no same digits in %d", n); // --> no
+            printf("NO, there are no same digits in %d", n);
             return 0;
         }
     }
